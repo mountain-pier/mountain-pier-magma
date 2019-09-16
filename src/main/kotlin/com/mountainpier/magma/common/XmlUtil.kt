@@ -11,21 +11,21 @@ import javax.xml.parsers.DocumentBuilderFactory
 
 class XmlSerial<T>(var obj: Class<T>) {
 
-    fun fromXML(xmlstream: InputStream):T {
-        val scanner = Scanner(xmlstream)
-        var str = ""
-        while (scanner.hasNext()){
-            str+=scanner.nextLine()
-        }
-        return fromXML(str)
-    }
-    fun fromXML(xml: String): T {
+//    fun fromXML(xmlstream: InputStream):T {
+//        val scanner = Scanner(xmlstream)
+//        var str = ""
+//        while (scanner.hasNext()){
+//            str+=scanner.nextLine()
+//        }
+//        return fromXML(str)
+//    }
+    fun fromXML(xmlstream: InputStream): T {
         val factory = DocumentBuilderFactory.newInstance()
         val builder = factory.newDocumentBuilder()
-        val strBuilder = StringBuilder()
-        strBuilder.append(xml)
-        val byteStream = ByteArrayInputStream(strBuilder.toString().toByteArray())
-        val doc = builder.parse(byteStream)
+//        val strBuilder = StringBuilder()
+//        strBuilder.append(xml)
+//        val byteStream = ByteArrayInputStream(strBuilder.toString().toByteArray())
+        val doc = builder.parse(xmlstream)
         doc.documentElement.normalize()
         return getNodeObject(doc.documentElement, obj)
     }

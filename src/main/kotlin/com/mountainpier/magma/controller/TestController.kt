@@ -16,7 +16,7 @@ class TestController{
     fun TestHello():String{
        var inputStream= ClassPathResource("test.xml").inputStream;
        var test= XmlSerial(Tests::class.java).fromXML(inputStream)
-       var size= test.test?.size
+       var size= test.test?.count();
         return "test.xml "+size;
     }
 }

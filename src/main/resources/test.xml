@@ -1,18 +1,18 @@
 <Tests>
-   <Test>
-      <TITLE>hh</TITLE>
-      <YEAR>2</YEAR>
-   </Test>
-   <Test>
-      <TITLE>hh</TITLE>
-      <YEAR>2</YEAR>
-   </Test>
-   <Test>
-      <TITLE>hh</TITLE>
-      <YEAR>2</YEAR>
-   </Test>
-   <Test>
-      <TITLE>hh</TITLE>
-      <YEAR>2</YEAR>
-   </Test>
+   <test>
+      <Title>hh</Title>
+      <Year>2</Year>
+   </test>
+   <test>
+      <Title>hh</Title>
+      <Year>2</Year>
+   </test>
+   <test>
+      <Title>hh</Title>
+      <Year>2</Year>
+   </test>
+   <test>
+      <Title>hh</Title>
+      <Year>2</Year>
+   </test>
 </Tests>
